@@ -11,39 +11,46 @@
 
 .container {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-
-  height: 100vh;
-  text-align: center;
 }
 
-.number-random {
+.content {
   width: 40rem;
-  background-color: var(--light-blue);
+
+  background-color: var(--blue);
   padding: 1rem;
   border: 1px solid var(--grey);
-  border-radius: 0.5rem;
+
+  text-align: center;
   color: var(--white);
+  border-radius: 0.5rem;
 }
 
-.number-random > * {
+.content > * {
   margin-bottom: 2rem;
 }
 
-span.number {
+span {
+  display: inline-block;
   font-size: 4rem;
+  border: 1px solid var(--grey);
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+hr {
+  border-color: var(--light-blue);
 }
 
 .button button {
   padding: 1rem;
-  margin: 0 1rem;
   font-size: 1.5rem;
-  color: var(--black);
   font-weight: 700;
   border: none;
   outline: none;
-  border-radius: 0.3rem;
 
+  border-radius: 0.5rem;
   cursor: pointer;
 }
