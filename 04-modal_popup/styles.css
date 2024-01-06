@@ -1,0 +1,111 @@
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--light-blue);
+  height: 100vh;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  color: var(--white);
+  padding-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+header h1 span {
+  font-weight: 700;
+}
+
+section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+}
+
+form button {
+  outline: none;
+  border: 1px solid var(--white);
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+
+  background-color: transparent;
+
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--color-sec);
+  transition: all 0.3s ease;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 60rem;
+  background-color: var(--grey);
+  margin: 15% auto;
+  padding: 2rem;
+  border: 1px solid #777;
+  text-align: center;
+  animation: slide ease 0.8s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: var(--color-primary);
+  font-size: 2rem;
+  cursor: pointer;
+}
