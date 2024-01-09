@@ -12,3 +12,10 @@
 body {
   background-color: var(--light-blue);
 }
+
+.box {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+}
