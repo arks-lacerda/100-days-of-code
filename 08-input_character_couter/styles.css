@@ -1,0 +1,56 @@
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-div {
+  width: 40rem;
+
+  background-color: var(--blue);
+  padding: 1rem;
+  border: 1px solid var(--grey);
+
+  text-align: center;
+  color: var(--white);
+  border-radius: 0.5rem;
+}
+
+.counter-div > * {
+  margin-bottom: 2rem;
+}
+
+span {
+  display: inline-block;
+  font-size: 4rem;
+  border: 1px solid var(--grey);
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+hr {
+  border-color: var(--light-blue);
+}
+
+.buttons button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
