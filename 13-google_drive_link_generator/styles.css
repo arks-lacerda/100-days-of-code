@@ -142,7 +142,8 @@ nav .slide {
 }
 
 #reset:checked ~ nav .slide {
-  left: 66%;
+  left: 63%;
+  width: 33%;
 }
 
 #login:checked ~ nav label.login,
@@ -287,4 +288,42 @@ section .content {
 
 .embed-code span:hover {
   font-size: 1.8rem;
+}
+
+button.clear {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: red;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button.clear:hover {
+  background-color: orangered;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 750px) {
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .instructions {
+    width: 100%;
+  }
+
+  .download-link {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .download-link h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
