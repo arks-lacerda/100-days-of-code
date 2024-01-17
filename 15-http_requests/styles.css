@@ -36,7 +36,7 @@ body {
 
 .user {
   margin: 0 auto;
-  width: 45%;
+  width: 60%;
   border: 1px solid #eee;
   border-radius: 3px;
   padding: 5px;
@@ -71,4 +71,17 @@ hr {
 ul {
   list-style: none;
   padding-left: 1.5rem;
+  margin: 5px 0;
+  background-color: var(--color-dark-grey);
+  border-radius: 3px;
+}
+
+ul li {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+span {
+  color: var(--color-sec);
+  font-weight: 700;
 }
