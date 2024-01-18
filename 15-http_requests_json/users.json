@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "age": 18,
+    "email": "john@doe.com"
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "age": 22,
+    "email": "jane@doe.com"
+  },
+  {
+    "id": 3,
+    "name": "Arthur Lacerda",
+    "age": 41,
+    "email": "larthur@meta.com"
+  },
+  {
+    "id": 4,
+    "name": "Mizuky Lacerda",
+    "age": 30,
+    "email": "lmizuky@meta.com"
+  },
+  {
+    "id": 5,
+    "name": "Rick Morty",
+    "age": 19,
+    "email": "mortyrick@gmail.com"
+  }
+]
