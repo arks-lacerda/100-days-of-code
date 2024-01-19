@@ -30,6 +30,10 @@ function displayData(res) {
     error.textContent = 'Please enter a valid city';
     search.value = '';
   } else {
+    const weatherIcon = document.querySelector('.weather-icon');
+    const iconURL = `http://openweathermap.org/img/w/`;
+    weatherIcon.src = `${iconURL}${res.weather[0].icon}.png`;
+
     const city = document.querySelector('.city');
     city.innerText = `${res.name}, ${res.sys.country}`;
 
@@ -47,10 +51,6 @@ function displayData(res) {
     tempRange.innerHTML = `Temp Range: ${Math.round(
       res.main.temp_min
     )}&deg;C / ${Math.round(res.main.temp_max)}&deg;C`;
-
-    const weatherIcon = document.querySelector('.weather-icon');
-    const iconURL = `http://openweathermap.org/img/w/`;
-    weatherIcon.src = `${iconURL}${res.weather[0].icon}.png`;
   }
   search.value = '';
 }
