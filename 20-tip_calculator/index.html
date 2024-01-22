@@ -14,32 +14,39 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class=calc">
-        <h2>Tip Calculator</h2>
-        <form action="">
-          <div>
-            <label for="bill">Bill:</label>
-            <input type="text" class="bill" id="bill" placeholder="$">
+    <section>
+      <div class="container">
+        <div class="calc">
+          <h2>Tip Calculator</h2>
+          <form action="">
+            <div>
+              <label for="bill">Bill:</label>
+              <input type="text" class="bill" id="bill" placeholder="$" />
+            </div>
+
+            <div>
+              <label for="rate-service">Rate Service:</label>
+              <select name="" id="rate-service" class="rate">
+                <option value="0" disabled selected>
+                  -- Select an option --
+                </option>
+                <option value="0.15">15% - Excellent</option>
+                <option value="0.10">10% - Good</option>
+                <option value="0.05">05% - Fair</option>
+              </select>
+            </div>
+
+            <button class="btn" type="button">Calculate</button>
+            <p class="error">Please enter bill and rate service</p>
+          </form>
+
+          <div class="result">
+            <p class="tip">Tip Amount: <span>$0</span></p>
+            <p class="total">Total Bill: <span>$0</span></p>
           </div>
-          <div>
-            <label for="rate-service">Rate Service:</label>
-            <select name="" id="rate-service" class="rate">
-              <option value="0" disabled selected>-- Select an option --</option>
-              <option value="0.15">15% - Excellent</option>
-              <option value="0.10">10% - Good</option>
-              <option value="0.05">05% - Fair</option>
-            </select>
-          </div>
-          <button class="btn" type="button">Calculate</button>
-          <p class="error">Please enter bill and rate service</p>
-        </form>
-        <div class="result">
-          <p class="tip">Tip Amount: $0</p>
-          <p class="total">Total Bill: $0</p>
         </div>
       </div>
-    </div>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>
