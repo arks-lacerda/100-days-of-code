@@ -23,6 +23,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+html {
+  /* scroll-behavior: smooth; */
+}
+
 form,
 input,
 select,
@@ -34,4 +38,70 @@ button {
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: var(--color-dark-grey);
+}
+
+nav {
+  height: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 4.5em;
+  color: var(--color-sec);
+  font-weight: 600;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style-type: none;
+  margin: 0 1.5rem;
+}
+
+.nav-list li a {
+  color: var(--white);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+/* Section */
+section {
+  padding: 5rem 0;
+}
+
+.box {
+  border: 1px solid var(--color-grey);
+  padding: 2rem;
+  border-radius: 3px;
+}
+
+h2 {
+  color: var(--color-primary);
+  font-size: 3rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex > * {
+  margin: 0 0.5rem;
+}
+
+.flex p {
+  font-size: 1.6rem;
 }
