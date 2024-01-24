@@ -53,8 +53,8 @@ header {
 }
 
 header.sticky {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--color-grey);
+  background-color: var(--color-grey);
+  box-shadow: 2px 1px 5px #777;
   padding: 1rem 0;
 }
 
