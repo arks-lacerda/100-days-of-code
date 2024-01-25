@@ -23,10 +23,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-html {
-  /* scroll-behavior: smooth; */
-}
-
 form,
 input,
 select,
