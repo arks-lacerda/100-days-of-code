@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  height: 100vh;
+  background-color: var(--grey);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: var(--light-blue);
+  padding: 2rem;
+  color: var(--white);
+  padding: 2rem;
+  width: 45rem;
+  border-radius: 0.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+
+  border-bottom: 1px solid var(--grey);
+}
+
+.form-field label {
+  cursor: pointer;
+}
+
+.p-header {
+  position: relative;
+}
+
+.p-header input {
+  width: 100%;
+  height: 100%;
+
+  background-color: #ea2c62;
+  border: none;
+  outline: none;
+
+  padding: 2rem;
+  border-radius: 0.3rem;
+
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+.p-header button,
+.form-field input[type='number'] {
+  padding: 0.4rem 1.2rem;
+  border: --white;
+
+  outline: none;
+  border: none;
+
+  border-radius: 0.3rem 0 0.3rem 0;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.p-header button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#submit {
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  background-color: #ea2c62;
+  border: 0;
+  outline: none;
+
+  border-radius: 0.5rem;
+  color: var(--white);
+
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#submit:hover {
+  background-color: #de144d;
+
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
