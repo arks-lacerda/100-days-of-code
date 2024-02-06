@@ -18,12 +18,13 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--blue);
+  font-size: 1.6rem;
 }
 
 p {
@@ -39,4 +40,62 @@ img {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 40rem;
+  background-color: var(--light-blue);
+  padding: 2rem;
+  color: var(--white);
+  border-radius: 3px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+form {
+  padding: 1rem 0;
+}
+
+form > * {
+  padding-bottom: 1rem;
+}
+
+form input,
+.btn {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.btn {
+  background-color: var(--color-sec);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+}
+
+.result {
+  padding: 1rem;
+}
+
+.reset {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  display: none;
 }
