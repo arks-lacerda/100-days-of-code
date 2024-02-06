@@ -92,10 +92,15 @@ form input,
 
 .result {
   padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
 }
 
 .reset {
   padding: 1rem;
   margin: 0.5rem 0;
   display: none;
+  cursor: pointer;
+  font-weight: bold;
 }
