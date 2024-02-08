@@ -51,7 +51,7 @@ body {
 }
 
 .title h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 .display {
@@ -59,7 +59,7 @@ body {
   background-color: rgba(90, 9, 94, 0.5);
   padding: 2rem 0;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 .date {
